@@ -3,8 +3,9 @@ import { Slide } from '../types/slide.ts'
 import { type PageProps } from '$fresh/server.ts'
 
 export const handler: Handlers<Slide[]> = {
-	async GET(_req, ctx) {
-		const res = await fetch('http://localhost:8000/api/slides')
+	async GET(req, ctx) {
+		const url = new URL(req.url)
+		const res = await fetch(`${url.protocol}//${url.host}/api/slides`)
 		const slides = await res.json() as Slide[]
 
 		return ctx.render(slides)
