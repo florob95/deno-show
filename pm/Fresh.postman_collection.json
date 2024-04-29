@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "7744ef95-3072-41cf-80b4-9b65d712a950",
+		"name": "Fresh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16845200"
+	},
+	"item": [
+		{
+			"name": "slides",
+			"item": [
+				{
+					"name": "slides all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/slides",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"slides"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "slides",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/slides/579f7d55-4700-4de8-929a-dde419a5f021",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"slides",
+								"579f7d55-4700-4de8-929a-dde419a5f021"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "slides",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"description\",\n    \"title\": \"title\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/slides",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"slides"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "slides",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/slides/356e7009-b8a7-4b29-8f72-cbf1f8d61ef6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"slides",
+								"356e7009-b8a7-4b29-8f72-cbf1f8d61ef6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "slides",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"new title\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/slides/356e7009-b8a7-4b29-8f72-cbf1f8d61ef6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"slides",
+								"356e7009-b8a7-4b29-8f72-cbf1f8d61ef6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

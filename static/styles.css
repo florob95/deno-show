@@ -14,4 +14,8 @@ body {
     .primary-button {
         @apply font-bold text-lightBlack rounded-xl p-4 bg-yellowBright w-[125px];
     }
+
+    .slide-border {
+        @apply border-2 border-lightBlack rounded-xl p-8;
+    }
 }
