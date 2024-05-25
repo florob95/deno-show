@@ -3,8 +3,10 @@ export type RawSlide = {
 	description: string
 }
 
-export type Slide = {
+export type DBSlide = {
 	id: string
 	title: string
 	description: string
+	logo?: string
+	code?: string
 }

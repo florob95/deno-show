@@ -8,7 +8,7 @@ import * as $api_slides_id_ from './routes/api/slides/[id].ts'
 import * as $api_slides_index from './routes/api/slides/index.ts'
 import * as $index from './routes/index.tsx'
 import * as $slide from './routes/slide.tsx'
-
+import * as $Slide from './islands/Slide.tsx'
 import { type Manifest } from '$fresh/server.ts'
 
 const manifest = {
@@ -20,7 +20,9 @@ const manifest = {
 		'./routes/index.tsx': $index,
 		'./routes/slide.tsx': $slide,
 	},
-	islands: {},
+	islands: {
+		'./islands/Slide.tsx': $Slide,
+	},
 	baseUrl: import.meta.url,
 } satisfies Manifest
 
