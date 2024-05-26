@@ -11,11 +11,11 @@ export default function Home() {
 					/>
 				</div>
 				<h1 className='text-5xl color-lightBlack font-bold mb-8'>
-					Fresh + KV + Deploy
+					Deno Ecosystem
 				</h1>
 			</div>
-			<p class='mt-10 text-base'>
-				Prez text
+			<p class='mt-10 text-lg'>
+				Powered by Deno (Fresh + KV + Deploy)
 			</p>
 			<div class='flex justify-center mt-10'>
 				<a href='/slide'>
