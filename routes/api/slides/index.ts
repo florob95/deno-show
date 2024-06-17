@@ -1,15 +1,10 @@
 import { Handlers } from '$fresh/server.ts'
 import { DB } from '../../../services/db/index.ts'
+import { listSlides } from '../../../services/slides/index.ts'
 
 export const handler: Handlers = {
 	async GET(_req) {
-		const db = await DB.getInstance()
-		const iter = await db.list({ prefix: ['slides'] })
-		const slides = []
-
-		for await (const res of iter) slides.push(res.value)
-
-		return new Response(JSON.stringify(slides), {
+		return new Response(JSON.stringify(await listSlides()), {
 			headers: { 'Content-Type': 'application/json' },
 		})
 	},
