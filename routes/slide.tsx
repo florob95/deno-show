@@ -7,8 +7,11 @@ export const handler: Handlers<DBSlide[]> = {
 	async GET(req, ctx) {
 		const url = new URL(req.url)
 		const res = await fetch(`${url.protocol}//${url.host}/api/slides`)
-			.catch(() => undefined)
-		const slides = await res?.json() as DBSlide[] || []
+		console.log(res)
+		const slides = await res.json().catch((err) => {
+			console.error(err)
+			return undefined
+		}) as DBSlide[] || []
 
 		return ctx.render(slides)
 	},
